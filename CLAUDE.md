@@ -182,6 +182,6 @@ Environment vars
 API key management
 
 
-Last updated: 3/17/26 M1 complete: Pipeline working locally, all six M1 risk checks passed. M2 complete: All three risk tiers spot-checked (High, Limited, Minimal), token costs documented. One M2 item open: EUR-Lex regulatory reference verification — complete before M3 sign-off. Current milestone: M3 Next session objective: Build Streamlit front-end — disclaimer on landing page, form with character counter, submit flow, output display
+Last updated: 3/17/26 M1 complete: Pipeline working locally, all six M1 risk checks passed. M2 complete: All three risk tiers spot-checked (High, Limited, Minimal), token costs documented. One M2 item open: EUR-Lex regulatory reference verification — complete before M3 sign-off. Current milestone: M2 Next session objective: Complete EUR-Lex regulatory reference verification (manual), then advance to M3 Streamlit front-end
 
 
