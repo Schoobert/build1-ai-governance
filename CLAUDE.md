@@ -182,6 +182,10 @@ Environment vars
 API key management
 
 
+Session Notes
+3/17/26 — System prompt refinement: Article 50(1) provider/deployer obligation distinction added to SONNET_SYSTEM. The primary Article 50(1) disclosure obligation rests with the provider/vendor; the deployer's primary lever is contractual. Article 26 independent deployer obligations also clarified — output must not imply deployer bears no direct obligations. "Limited Risk" terminology clarification added: this term does not appear verbatim in the EU AI Act and refers to Article 50 transparency obligations. Both changes verified against Limited Risk chatbot test output.
+3/17/26 — Token headroom warning: After March 17 system prompt additions, input tokens for a typical Limited Risk assessment are running ~1,077 against the 1,300 hard cap. Approximately 223 tokens of remaining headroom in SONNET_SYSTEM before hitting the input ceiling. Do not add further system prompt instructions without recalculating token impact first.
+
 Last updated: 3/17/26 M1 complete: Pipeline working locally, all six M1 risk checks passed. M2 complete: All three risk tiers spot-checked (High, Limited, Minimal), token costs documented. One M2 item open: EUR-Lex regulatory reference verification — complete before M3 sign-off. Current milestone: M2 Next session objective: Complete EUR-Lex regulatory reference verification (manual), then advance to M3 Streamlit front-end
 
 
