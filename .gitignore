@@ -1,1 +1,5 @@
 .env
+api_usage_log.txt
+__pycache__/
+*.pyc
+.venv/
