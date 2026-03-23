@@ -102,20 +102,20 @@ Assess the following AI use case under the EU AI Act framework.
 
 Generate a structured assessment using exactly this format. Be concise — keep total response under 500 words:
 
-## RISK TIER
+### RISK TIER
 [Unacceptable / High / Limited / Minimal]
 
 **Rationale:** [2–3 sentences citing the relevant EU AI Act provision, annex, or prohibited practice that determines this classification]
 
-## APPLICABLE OBLIGATIONS
+### APPLICABLE OBLIGATIONS
 List the 3–5 most relevant obligations for this risk tier (include article numbers where applicable):
 - [obligation]
 
-## COMPLIANCE GAPS
+### COMPLIANCE GAPS
 Based on the current safeguards described, identify 3–5 specific gaps the organization should address:
 - [gap]
 
-## REMEDIATION ROADMAP
+### REMEDIATION ROADMAP
 Prioritized actions (most urgent first, with suggested timelines):
 1. [Action] — [Timeline]
 2. [Action] — [Timeline]
@@ -243,18 +243,18 @@ def run_assessment(inp: AssessmentInput) -> str:
     output = "\n".join([
         DISCLAIMER,
         "",
-        "=" * 60,
-        "EU AI ACT GOVERNANCE READINESS ASSESSMENT",
-        f"Assessment ID : {inp.assessment_id}",
-        f"Generated     : {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
-        "=" * 60,
+        "---",
+        "",
+        "## EU AI ACT GOVERNANCE READINESS ASSESSMENT",
+        "",
+        f"Assessment ID: {inp.assessment_id}",
+        f"Generated: {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+        "",
+        "---",
         "",
         assessment_text,
         "",
-        "=" * 60,
-        f"Token usage  —  Input: {total_input_tokens}  |  Output: {total_output_tokens}  |  "
-        f"Estimated cost: ${total_cost:.4f}",
-        "=" * 60,
+        "---",
         "",
         DISCLAIMER,
     ])
