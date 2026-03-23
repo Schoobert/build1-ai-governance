@@ -24,3 +24,13 @@
 - One M2 item left open: EUR-Lex regulatory reference verification (manual — complete before M3 sign-off)
 - Next session: M3 Streamlit front-end
 
+## March 23, 2026 — M3 complete
+- Merged M1+M2 work from beautiful-dirac branch into main; rebased condescending-lehmann onto main
+- Created Python venv, installed Streamlit 1.55.0, added to requirements.txt
+- Built app.py: landing disclaimer (st.warning), acknowledgment checkbox gate, structured form with 3,200-char counter, submit flow, user-facing error handling — no business logic in app.py
+- Output formatting in pipeline.py: ## title, ### section headers, --- separators, plain metadata, token usage line removed from user-facing output
+- Disclaimer text duplication (app.py + pipeline.py) flagged in Tool Dependency risk register — resolve before M5
+- M3 risk checks passed: disclaimer on landing page, disclaimer before submit, character counter enforced
+- M3 gate items still open before M4: Supabase RLS, daily usage cap, Anthropic billing alerts
+- Current milestone: M3.5 — structured pre-launch testing (minimum 20 documented test cases)
+
