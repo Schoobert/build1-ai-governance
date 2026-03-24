@@ -61,28 +61,57 @@ st.subheader("Describe your AI use case")
 
 with st.form("assessment_form"):
     use_case_name = st.text_input(
-        "Use case name",
+        "Title of This Assessment",
         placeholder="e.g. AI-powered candidate screening tool",
         max_chars=200,
     )
+    with st.expander("ℹ️ Need help with this field?", expanded=False):
+        st.write(
+            "Give this assessment a name you'll recognize later — e.g. "
+            "'Candidate Screening Tool' or 'Customer Service Chatbot'"
+        )
+    st.caption("Max 200 characters")
 
     industry = st.text_input(
-        "Industry",
+        "Industry or Sector",
         placeholder="e.g. Financial Services, Healthcare, Retail",
         max_chars=100,
     )
+    with st.expander("ℹ️ Need help with this field?", expanded=False):
+        st.write(
+            "The industry or sector in which this AI system operates — e.g. "
+            "Financial Services, Healthcare, Retail, Public Sector"
+        )
+    st.caption("Max 100 characters")
 
-    deployment_context = st.text_input(
-        "Deployment context",
-        placeholder="e.g. Internal HR tool used by 3 recruiters, external-facing customer service chatbot",
+    deployment_context = st.text_area(
+        "Who Is Affected and How?",
+        placeholder="e.g. Used by HR team to screen 200 job applicants per month",
+        height=100,
         max_chars=400,
     )
+    with st.expander("ℹ️ Need help with this field?", expanded=False):
+        st.write(
+            "Describe who uses or is affected by the relevant AI system, how many use it "
+            "(an estimate will suffice), and whether it is internal-facing or customer-facing — "
+            "e.g. 'Used by HR team to screen 200 job applicants per month' or "
+            "'Customer-facing chatbot handling 10,000 inquiries per week'"
+        )
+    st.caption("Max 400 characters")
 
-    current_safeguards = st.text_input(
-        "Current safeguards in place",
-        placeholder="e.g. Human review of all AI recommendations, opt-out available for customers",
+    current_safeguards = st.text_area(
+        "Existing Controls, Safeguards, or Oversight",
+        placeholder="e.g. Human review required before decisions take effect; no formal AI policy in place",
+        height=100,
         max_chars=400,
     )
+    with st.expander("ℹ️ Need help with this field?", expanded=False):
+        st.write(
+            "Describe any controls already in place to manage AI risks from this system — "
+            "e.g. human review before decisions take effect, user disclosure that AI is involved, "
+            "audit logs, or internal policies. If nothing is in place, say so."
+        )
+    st.caption("Max 400 characters")
 
     free_text_description = st.text_area(
         "Description",
