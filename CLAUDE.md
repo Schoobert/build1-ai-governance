@@ -9,6 +9,8 @@ Do not skip this protocol even if the session feels like a quick fix or small ad
 
 End of session protocol: before closing, merge current worktree branch into main. Confirm main reflects all session commits.
 
+One-time cleanup pending: delete stale branches claude/beautiful-dirac and claude/condescending-lehmann — both are behind main and no longer needed. Run at start of next session, then remove this item.
+
 What This Tool Does
 This tool helps privacy and legal teams at mid-market companies (100–500 employees) understand their obligations under the EU AI Act. Users submit a description of an AI use case their organization is deploying or considering. The tool classifies that use case by EU AI Act risk tier (Unacceptable, High, Limited, Minimal), maps it to the applicable regulatory requirements for that tier, identifies compliance gaps based on the user's current state, and generates a structured governance readiness report with a prioritized remediation roadmap.
 The tool is designed for a Privacy Counsel, Legal Operations Manager, Chief Privacy Officer, or DPO at a company that uses AI internally and needs to understand their EU AI Act exposure — but does not have the budget for a Big 4 consulting engagement or an enterprise GRC platform.
