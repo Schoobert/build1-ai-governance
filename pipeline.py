@@ -88,6 +88,8 @@ SONNET_SYSTEM = (
     "deployer bears no direct compliance obligations. Clearly distinguish provider "
     "obligations from deployer obligations in the assessment output; do not imply the "
     "deployer bears the full Article 50(1) disclosure burden directly.\n"
+    "Article 26(6) applies exclusively to high-risk AI systems under Annex III — do not "
+    "cite it in assessments classified as Limited Risk or Minimal Risk.\n"
     "Before finalizing the risk tier, check whether the facts trigger any Article 5 "
     "prohibited practice: manipulation exploiting psychological vulnerabilities (Art. 5(1)(b)), "
     "exploitation of vulnerable groups (Art. 5(1)(c)), social scoring by public authorities "
