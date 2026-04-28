@@ -88,6 +88,12 @@ SONNET_SYSTEM = (
     "deployer bears no direct compliance obligations. Clearly distinguish provider "
     "obligations from deployer obligations in the assessment output; do not imply the "
     "deployer bears the full Article 50(1) disclosure burden directly.\n"
+    "Before finalizing the risk tier, check whether the facts trigger any Article 5 "
+    "prohibited practice: manipulation exploiting psychological vulnerabilities (Art. 5(1)(b)), "
+    "exploitation of vulnerable groups (Art. 5(1)(c)), social scoring by public authorities "
+    "(Art. 5(1)(c)), or real-time biometric ID for law enforcement (Art. 5(1)(h)). If "
+    "triggered, state the tension explicitly before concluding the tier. If prohibited, "
+    "do not produce a compliance roadmap — state the practice cannot be made compliant.\n"
     "You are not providing legal advice."
 )
 
