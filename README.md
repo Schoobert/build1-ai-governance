@@ -1,59 +1,35 @@
-# EU AI Act Readiness Assessor
+# EU AI Act Governance Readiness Assessment Tool
 
-A lightweight AI-powered tool that helps privacy and legal teams at mid-market companies understand their obligations under the EU AI Act — without a Big 4 consulting engagement or an enterprise GRC platform.
+A working AI-powered tool that helps organizations understand their obligations under the EU AI Act.
 
----
+## Live Demo
 
-## The Problem
+[Try it here → ai-governance-tool.streamlit.app](https://ai-governance-tool.streamlit.app/)
 
-The EU AI Act is in force. Mid-market companies deploying AI internally are scrambling to understand their exposure — but most compliance resources are written for large enterprises with dedicated legal teams and six-figure consulting budgets. Privacy counsel, DPOs, and legal operations managers at 100–500 person companies are left to figure it out on their own.
+## What It Does
 
-## What This Tool Does
+Companies using AI internally face real compliance obligations under the EU AI Act. This tool lets a user input an AI use case, and autonomously:
 
-Users submit a description of an AI use case their organization is deploying or considering. The tool:
+- Classifies it by risk tier (Unacceptable, High, Limited, or Minimal Risk)
+- Runs an Article 5 prohibited practice screen
+- Maps applicable regulatory obligations to the specific use case
+- Identifies compliance gaps
+- Produces a prioritized remediation roadmap with timelines
 
-1. **Classifies the use case** by EU AI Act risk tier (Unacceptable, High, Limited, or Minimal Risk)
-2. **Maps applicable obligations** — the specific EU AI Act articles and requirements that apply to that tier
-3. **Identifies compliance gaps** based on the organization's current safeguards
-4. **Generates a prioritized remediation roadmap** with concrete next steps
+Built for mid-market organizations who need practical EU AI Act guidance without enterprise-priced consultants.
 
-Input is a structured form (use case name, industry, deployment context, existing safeguards) plus a free-text description field. Output is a structured on-screen report with classification rationale, regulatory references, identified gaps, and a remediation roadmap.
+## Built With
 
-## Who It's For
+- Claude API (classification, gap analysis, roadmap generation)
+- Python + Streamlit
+- Anthropic claude-sonnet model
 
-- Privacy Counsel
-- Data Protection Officers (DPOs)
-- Legal Operations Managers
-- Chief Privacy Officers
+## About
 
-At companies that use AI internally and need to understand their EU AI Act exposure — but don't have the budget for enterprise compliance tooling.
+Built by Derek Pignatelli — Privacy and AI Governance program leader with 18+ years of experience at Meta and Amazon. This tool demonstrates applied AI governance expertise and practical Claude API integration.
 
-## How It Works
+[LinkedIn](https://www.linkedin.com/in/derekpignatelli) | [GitHub](https://github.com/Schoobert)
 
-The tool uses a two-model AI pipeline:
+## Disclaimer
 
-- **Claude Haiku** handles input validation and output formatting
-- **Claude Sonnet** performs risk tier classification, regulatory mapping, gap analysis, and roadmap generation
-
-Token limits are enforced in code on every request to ensure predictable cost and output quality. Every assessment output includes a mandatory disclaimer that the output is AI-generated and does not constitute legal advice.
-
-## Tech Stack
-
-| Component | Tool |
-|---|---|
-| AI reasoning | Anthropic Claude API (Sonnet + Haiku) |
-| Orchestration | Python |
-| Front-end | Streamlit |
-| Environment | python-dotenv |
-
-## Current Status
-
-This project is in active development. The core assessment pipeline and Streamlit front-end are complete and running locally. Structured pre-launch testing (20 documented test cases across all risk tiers) is currently in progress before external deployment.
-
-## Important Disclaimer
-
-This tool is for informational purposes only. It does not constitute legal advice, regulatory guidance, or a compliance determination. Classifications and recommendations are AI-generated and have not been reviewed by a qualified attorney or compliance professional. Do not rely on this output as the sole basis for any compliance, product, or business decision. Consult qualified legal counsel before acting on any findings.
-
----
-
-*Built by Derek Pignatelli using Claude Code and the Anthropic API.*
+This tool does not constitute legal advice. All article references should be verified against current EUR-Lex text.
