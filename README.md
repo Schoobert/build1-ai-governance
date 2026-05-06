@@ -1,3 +1,5 @@
+🎥 [Watch the demo on Loom](https://www.loom.com/share/2e34fd6f7dec4ed6a9888fe0eaf3a92d)
+
 # EU AI Act Governance Readiness Assessment Tool
 
 A working AI-powered tool that helps organizations understand their obligations under the EU AI Act.
